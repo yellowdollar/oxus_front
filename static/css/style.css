@@ -885,6 +885,13 @@ footer .side {
     gap: 53px;
 }
 
+@media (max-width: 1536px) {
+    .content .guests .items {
+        width: 75%;
+        justify-content: center;
+    }
+}
+
 .content .guests .items .item{
     height: 100%;
     width: 325px;
