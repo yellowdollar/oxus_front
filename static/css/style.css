@@ -1680,3 +1680,262 @@ input[type="radio"]:checked::before {
     display: flex;
     align-items: center;
 }
+
+.first-block {
+    height: 640px;
+    width: 100%;
+
+    background-color: #F5F5F5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-block section {
+    height: 100%;
+    width: 1080px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px
+}
+
+.first-block .row .item .image {
+    height: 100%;
+    width: 100%;
+}
+
+.first-block .row .item .image img{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.first-block section .row:nth-child(1){
+    height: 420px;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.first-block section .row:nth-child(1) .item:nth-child(1){
+    height: 100%;
+    width: 480px;
+}
+
+
+.first-block section .row:nth-child(1) .item:nth-child(2){
+    height: 100%;
+    width: 580px;
+}
+
+.first-block section .row:nth-child(2) {
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(1) {
+    height: 100%;
+    width: 280px;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(1) .image {
+    height: 100%;
+    width: 100%;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(1) .image img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(2) {
+    height: 100%;
+    width: 280px;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(2) .image {
+    height: 100%;
+    width: 100%;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(2) .image img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(3) {
+    height: 100%;
+    width: 480px;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(3) .image {
+    height: 100%;
+    width: 100%;
+}
+
+.first-block section .row:nth-child(2) .item:nth-child(3) .image img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.exhibition-info {
+    height: 217px;
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 103px;
+
+    background-image: url('../images/block2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.exhibition-info img{
+    margin-top: 40px;
+}
+
+.exhibition-info span {
+    width: 980px;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.context {
+    min-height: 500px;
+    width: 1080px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.context .header {
+    height: 74px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #800116;
+}
+
+.context .header .line {
+    height: 5px;
+    width: 140px;
+
+    background-color: #FAB000;
+    border-radius: 10px;
+
+    margin-top: 18px;
+}
+
+.context .blocks {
+    min-height: 384px;
+    width: 100%;
+    margin-top: 74px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 59px;
+}
+
+.context .blocks .item{
+    height: 384px;
+    width: 100%;
+}
+
+.context .blocks .big{
+    font-size: 21px;
+    font-weight: 700;
+
+    color: #800116;
+
+    margin-bottom: 12px;
+}
+
+.context .blocks .small{
+    width: 777px;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    color: #800116;
+
+    margin-bottom: 12px;
+}
+
+.context .blocks .images {
+    height: 270px;
+    width: 100%;
+
+    margin-top: 55px;
+    display: flex;
+
+    gap: 20px;
+
+    overflow: hidden;
+    cursor: grab;
+
+    scroll-behavior: smooth;
+} 
+
+@media (max-width: 440px) {
+    .context .blocks .images {
+        overflow: auto;
+    }
+}
+
+.context .blocks .images .image{
+    height: 270px;
+    width: 270px;
+
+    flex-shrink: 0;
+
+    user-select: none;
+
+    transition: transform 0.2s ease-out;
+} 
+
+
+.context .blocks .images .image img{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
+    user-select: none;
+}
