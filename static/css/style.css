@@ -13,6 +13,7 @@ body {
 }
 
 header {
+    all: unset;
     height: 230px;
     width: 100%;
 
@@ -21,6 +22,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin: 0;
+
+    gap: 1px;
 }
 
 header .menus{
@@ -34,6 +39,7 @@ header .menus{
 
     gap: 30px;
 }
+
 
 header .menus ul{
     width: 100%;
@@ -56,6 +62,18 @@ header .menus ul li {
 
     font-feature-settings: "liga" on, "kern" on;
     transition: font-weight 0.3s ease;
+}
+
+@media (max-width: 1280px) {
+
+    header .menus {
+        width: 70%;
+    }
+
+    
+    header .menus ul{
+        justify-content: flex-start;
+    }
 }
 
 header .menus ul li a{
