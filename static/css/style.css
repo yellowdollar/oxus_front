@@ -1598,20 +1598,27 @@ input[type="radio"]:checked::before {
 }
 
 .news .news_content .text {
-    width: 630px;
+    margin-top: 30px;
     margin-left: 20px;
-    margin-top: 20px;
 
     font-size: 18px;
 
     font-weight: 300;
 
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+}
 
-    gap: 20px;
+.news .news_content .text p{
+    margin: 0;
+    padding: 0;
+}
+
+.news .news_content .text ul {
+    padding: 0;
+    margin: 0;
 }
 
 .all_news {
