@@ -1496,8 +1496,8 @@ input[type="radio"]:checked::before {
 }
 
 .news {
-    height: 1030px;
-    width: 1130px;
+    min-height: 1030px;
+    width: 1230px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1507,8 +1507,8 @@ input[type="radio"]:checked::before {
 }
 
 .news .news_content {
-    height: 100%;
-    width: 680px;
+    min-height: 1030px;
+    width: 780px;
 
     border-radius: 15px;
 
@@ -1546,17 +1546,17 @@ input[type="radio"]:checked::before {
 
 .news .news_content .images .closed {
     height: 290px;
-    width: 160px;
+    width: 260px;
 
     display: flex;
     flex-direction: column;
     gap: 10px;
-
+    overflow-y: auto;
 }
 
 .news .news_content .images .closed .image{
     height: 140px;
-    width: 160px;
+    width: 240px;
     border-radius: 10px;
 }
 
@@ -1601,6 +1601,9 @@ input[type="radio"]:checked::before {
     margin-top: 30px;
     margin-left: 20px;
 
+    margin-bottom: 30px;
+    margin-right: 20px;
+
     font-size: 18px;
 
     font-weight: 300;
@@ -1623,7 +1626,7 @@ input[type="radio"]:checked::before {
 
 .all_news {
     height: 1030px;
-    width: 380px;
+    width: 400px;
 
     display: flex;
     flex-direction: column;
@@ -1636,7 +1639,7 @@ input[type="radio"]:checked::before {
 
 .all_news .items {
     height: 100%;
-    width: 99%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -1647,7 +1650,7 @@ input[type="radio"]:checked::before {
 }
 
 .all_news .items .item {
-    height: 330px;
+    height: 360px;
     width: 100%;
 
     border-radius: 15px;
@@ -1667,7 +1670,7 @@ input[type="radio"]:checked::before {
 
 .all_news .items .item .image{
     height: 200px;
-    width: 300px;
+    width: 350px;
     margin-top: 20px;
     margin-left: 20px;
 
@@ -1684,23 +1687,27 @@ input[type="radio"]:checked::before {
 }
 
 .all_news .items .item label {
-    font-size: 21px;
+    height: 30px;
+    width: 350px;
+    font-size: 18px;
     font-weight: 600;
     margin-left: 20px;
     margin-top: 20px;
+
+    word-wrap: break-word;
 }
 
 .all_news .items .item .date {
     margin-left: 20px;
-    margin-top: 27px;
+    margin-top: 50px;
     display: flex;
 
     gap: 5px;
 }
 
 .all_news .items .item .date span {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14qpx;
+    font-weight: 600;
 
     display: flex;
     align-items: center;
