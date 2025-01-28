@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://127.0.0.1:8000/news/get_all_news', {
+    fetch('http://147.45.233.158/news/get_all_news', {
         method: 'GET'
     })
     .then(response => {
