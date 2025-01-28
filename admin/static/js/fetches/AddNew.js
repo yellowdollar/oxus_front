@@ -25,7 +25,7 @@ add_news_button.addEventListener('click', function() {
     formData.append('token', token);
 
     // Отправка данных через fetch
-    fetch('http://147.45.233.158/news/add_new', {
+    fetch('http://147.45.233.158/api/news/add_new', {
         method: 'POST',
         body: formData
     })
