@@ -519,7 +519,7 @@ header .menus .logo img:last-child {
 
 .content .forum-regist .contacts{
     height: 109px;
-    width: 50%;
+    width: 60%;
 
     display: flex;
     align-items: center;
@@ -529,7 +529,7 @@ header .menus .logo img:last-child {
 
 @media (max-width: 1536px) {
     .content .forum-regist .contacts{
-        width: 60%;
+        width: 90%;
         align-items: center;
         justify-content: center;
     }
