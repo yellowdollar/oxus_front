@@ -153,7 +153,7 @@
                     Не упустите шанс стать частью главного 
                     события ювелирной отрасли!
                 </div>
-                <input class="regist" type="submit" value="Зарегистрироваться">
+                <input class="regist" type="submit" value="Зарегистрироваться" id="regist_scroll">
             </section>
         </div>
 
@@ -208,29 +208,29 @@
                     <div class="row">
                         <div class="item">
                             <label>Имя *</label>
-                            <input type="text">
+                            <input type="text" id="regist_name">
                         </div>
                         <div class="item">
                             <label>Фамилия *</label>
-                            <input type="text">
+                            <input type="text" id="regist_surname">
                         </div>
                         <div class="item">
                             <label>Почта *</label>
-                            <input type="text">
+                            <input type="text" id="regist_email">
                         </div>
                     </div>
                     <div class="row">
                         <div class="item">
                             <label>Номер Телефона</label>
-                            <input type="text">
+                            <input type="text" id="regist_phone">
                         </div>
                         <div class="item">
                             <label>Что-то еще?</label>
-                            <input type="text">
+                            <input type="text" id="regist_smth">
                         </div>
                     </div>
                 </div>
-                <input class="send" type="submit" value="Отправить">
+                <input class="send" type="submit" value="Отправить" id="regist_send">
             </div>
         </div>
 
@@ -264,5 +264,9 @@
     <!-- Get All Forums -->
     <script src="static/js/GetAllForums.js"></script>
     
+    <!-- SEND REGIST -->
+    <script src="static/js/RegistFetch.js"></script>
+    <script src="static/js/RegistScroll.js"></script>
+
 </body>
 </html>
