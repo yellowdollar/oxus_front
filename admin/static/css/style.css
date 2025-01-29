@@ -293,7 +293,7 @@ header ul li:hover {
     width: 100%;
 
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
 
@@ -377,7 +377,7 @@ header ul li:hover {
 
     background-color: rgba(0, 0, 0, 0.5);
 
-    position: absolute; 
+    position: fixed; 
     left: 0;
     top: 0;
 
@@ -391,7 +391,7 @@ header ul li:hover {
 }
 
 .content .news .add_new_menu .menu {
-    height: 800px;
+    height: 650px;
     width: 1180px;
 
     background-color: white;

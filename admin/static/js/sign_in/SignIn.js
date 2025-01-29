@@ -8,7 +8,7 @@ sign_in_button.addEventListener('click', function() {
     formData.append('login', login);
     formData.append('password', password);
 
-    fetch('http://147.45.233.158/api/auth/sign_in', {
+    fetch('http://10.251.4.137/api/auth/sign_in', {
         method: 'POST',
         body: formData
     })

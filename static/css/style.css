@@ -38,8 +38,9 @@ header .menus{
     align-items: center;
 
     gap: 30px;
-}
 
+    position: relative;
+}
 
 header .menus ul{
     width: 100%;
@@ -64,6 +65,61 @@ header .menus ul li {
     transition: font-weight 0.3s ease;
 }
 
+.hover_forum_menu {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    height: 300px;
+    width: 300px;
+
+    z-index: 100;
+
+    margin-top: 10px;
+}
+
+.hover_forum_menu ul {
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+.hover_forum_menu ul li {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.hover_forum_menu ul li:hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+
+.hover_forum_menu ul li a {
+    color: black;
+    text-decoration: none;
+
+    height: 100%;
+    width: 100%;
+
+    margin-left: 15px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hover_forum_menu.active {
+    display: block;
+}
+
 @media (max-width: 1280px) {
 
     header .menus {
@@ -80,7 +136,6 @@ header .menus ul li a{
     text-decoration: none;
     color: black;
 }
-
 
 header .menus ul li:hover {
     cursor: pointer;
@@ -779,7 +834,7 @@ footer .side {
 }
 
 .content .speakers_experts {
-    height: 498px;
+    min-height: 498px;
     width: 100%;
     background-color: #F5F5F5;
     display: flex;
@@ -804,12 +859,13 @@ footer .side {
 }
 
 .content .speakers_experts .items{
-    height: 384px;
-    width: 100%;
+    min-height: 384px;
+    width: 1180px;
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     margin-top: 40px;
 
@@ -828,11 +884,15 @@ footer .side {
 .content .speakers_experts .items .item .image{
     height: 300px;
     width: 325px;
+
+    border-radius: 20px;
 }
 
 .content .speakers_experts .items .item .image img{
     height: 100%;
     width: 100%;
+
+    border-radius: 20px;
 
     object-fit: cover;
 }
@@ -868,7 +928,7 @@ footer .side {
 }
 
 .content .guests {
-    min-height: 922px;
+    min-height: 722px;
     width: 100%;
 
     display: flex;
@@ -898,10 +958,10 @@ footer .side {
 
 .content .guests .items{
     min-height: 384px;
-    width: 58%;
+    width: 1180px;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
 
     flex-wrap: wrap;
@@ -937,11 +997,15 @@ footer .side {
 .content .guests .items .item .image{
     height: 300px;
     width: 325px;
+
+    border-radius: 20px;
 }
 
 .content .guests .items .item .image img{
     height: 100%;
     width: 100%;
+
+    border-radius: 20px;
 
     object-fit: cover;
 }
@@ -977,8 +1041,8 @@ footer .side {
 }
 
 .content .program{
-    height: 670px;
-    width: 100%;
+    min-height: 670px;
+    width: 1180px;
 
     background-color: #F5F5F5;
 
@@ -1018,25 +1082,27 @@ footer .side {
     width: 100%;
 }
 
-.content .program .items .row{
-    height: 50%;
+.content .program .items{
+    min-height: 124px;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
-    gap: 120px
+    gap: 20px;
 }
 
-.content .program .items .row .item{
-    height: 124px;
-    width: 480px;
+.content .program .items .item{
+    min-height: 124px;
+    width: calc(50% - 10px);
 
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
-.content .program .items .row .item .big{
+.content .program .items .item .big{
     display: flex;
     flex-direction: column;
     font-size: 21px;
@@ -1045,7 +1111,8 @@ footer .side {
     color: #800116;
 }
 
-.content .program .items .row .item .small{
+.content .program .items .item .small{
+    width: 80%;
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -1053,6 +1120,11 @@ footer .side {
 
     color: #2D2826;
     margin-top: 12px;
+}
+
+.content .program .items .item .small span p {
+    margin: 0;
+    padding: 0;
 }
 
 .report {

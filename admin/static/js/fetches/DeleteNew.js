@@ -10,7 +10,7 @@ news_id_delete_button.addEventListener('click', function() {
     formData.append('token', token);
     formData.append('id', news_id_delete);
 
-    fetch('http://147.45.233.158/api/news/delete_new', {
+    fetch('http://10.251.4.137/api/news/delete_new', {
         method: 'POST',
         body: formData
     })
@@ -45,7 +45,7 @@ function getCookie(name) {
 }
 
 function updateNewsTable() {
-    fetch('http://147.45.233.158/api/news/get_all_news', {
+    fetch('http://10.251.4.137/api/news/get_all_news', {
         method: 'GET'
     })
     .then(response => {
