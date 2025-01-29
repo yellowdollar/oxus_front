@@ -878,7 +878,7 @@ footer .side {
 }
 
 .content .speakers_experts .items{
-    min-height: 384px;
+    min-height: 220px;
     width: 1180px;
 
     display: flex;
@@ -901,8 +901,8 @@ footer .side {
 }
 
 .content .speakers_experts .items .item .image{
-    height: 300px;
-    width: 325px;
+    height: 260px;
+    width: 285px;
 
     border-radius: 20px;
 }
@@ -960,7 +960,7 @@ footer .side {
 .content .guests .header {
     height: 74px;
     width: 100%;
-    margin-top: 74px;
+    margin-top: 0px;
 
     background-color: #FAB000;
 
@@ -976,7 +976,7 @@ footer .side {
 }
 
 .content .guests .items{
-    min-height: 384px;
+    min-height: 220px;
     width: 1180px;
 
     display: flex;
@@ -1014,8 +1014,8 @@ footer .side {
 }
 
 .content .guests .items .item .image{
-    height: 300px;
-    width: 325px;
+    height: 260px;
+    width: 285px;
 
     border-radius: 20px;
 }
@@ -1070,7 +1070,7 @@ footer .side {
 }
 
 .content .program .header {
-    margin-top: 110px;
+    margin-top: 50px;
     height: 74px;
     width: 30%;
 
@@ -1105,6 +1105,7 @@ footer .side {
     min-height: 124px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -1114,7 +1115,7 @@ footer .side {
 
 .content .program .items .item{
     min-height: 124px;
-    width: calc(50% - 10px);
+    width: 100%;
 
     display: flex;
     flex-direction: column;
