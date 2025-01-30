@@ -400,6 +400,8 @@ header .mobile-hamburger .line{
 
     border-radius: 15px;
 
+    padding: 15px;
+
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -412,6 +414,8 @@ header .mobile-hamburger .line{
         align-items: center;
         bottom: 0px;
         left: 0px;
+
+        padding: 0;
 
         background-color: rgba(0, 0, 0, 0.5);
     }
