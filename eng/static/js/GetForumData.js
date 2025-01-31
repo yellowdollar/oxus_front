@@ -25,13 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             block_2_header.innerText = `Until the Beginning of the International Jewelry Forum ${data[0].year} Remaining:` 
         
-            const place = data[0].place;
+            const place = data[0].place_eng;
             const placeArray = place.split(',');
 
             let forum_place = document.querySelector('.forum-info .place');
             
             if(placeArray.length >= 2) {
-                forum_place.innerText += ` "${placeArray[0]}" и ${placeArray[1]}`
+                forum_place.innerText += ` "${placeArray[0]}" and ${placeArray[1]}`
             }else {
                 forum_place.innerText += ` "${placeArray[0]}"`
             }
