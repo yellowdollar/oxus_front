@@ -146,6 +146,43 @@ header .image:nth-child(1) img{
     transform: scaleX(-1);
 }
 
+.dropdown_lang {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.dropdown_lang .dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 120px;
+    border-radius: 5px;
+}
+
+.dropdown_lang:hover .dropdown_menu {
+    display: block;
+}
+
+.dropdown_lang .dropdown_menu li {
+    padding: 8px 15px;
+}
+
+.dropdown_lang .dropdown_menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown_lang .dropdown_menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
 header .menus .logo {
     height: 100px;
     width: 100%;
@@ -1848,6 +1885,18 @@ footer .side .rights{
     margin-bottom: 48px;
 }
 
+@media (max-width: 440px) {
+    .report_header {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 369px) {
+    .report_header {
+        margin-left: 60px;
+    }
+}
+
 .report .report_content {
     min-height: 1030px;
     width: 780px;
@@ -1859,10 +1908,18 @@ footer .side .rights{
 
 @media (max-width: 440px) {
     .report .report_content {
-        width: 430px;
+        width: 400px;
         margin-left: 20px;
     }
 }
+
+@media (max-width: 369px) {
+    .report .report_content {
+        width: 400px;
+        margin-left: 60px;
+    }
+}
+
 .report .report_content .images{
     height: 290px;
     width: 100%;
@@ -1883,7 +1940,7 @@ footer .side .rights{
 
 .report .report_content  .images .opened_image {
     height: 100%;
-    width: 360px;
+    width: 460px;
 
     margin-left: 20px;
 
@@ -1893,6 +1950,7 @@ footer .side .rights{
 @media (max-width: 440px) {
     .report .report_content  .images .opened_image {
         height: 290px;
+        width: 360px;
     }
 }
 
@@ -1979,6 +2037,12 @@ footer .side .rights{
     color: #800116;
 }
 
+@media (max-width: 440px) {
+    .report .report_content .title {
+        width: 380px;
+    }
+}
+
 .report .report_content .text {
     margin-top: 30px;
     margin-left: 20px;
@@ -2021,10 +2085,20 @@ footer .side .rights{
 @media (max-width: 440px) {
     .all_reports {
         height: 440px;
-        width: 420px;
+        width: 400px;
         flex-direction: row;
         margin-top: 50px;
         margin-left: 20px;
+    }
+}
+
+@media (max-width: 369px) {
+    .all_reports {
+        height: 440px;
+        width: 400px;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-left: 60px;
     }
 }
 
@@ -2043,9 +2117,11 @@ footer .side .rights{
 
 @media (max-width: 440px) {
     .all_reports .items {
-        width: 440px;
+        width: 400px;
         height: 400px;
         flex-direction: row;
+
+        overflow-y: hidden;
     }
 }
 
