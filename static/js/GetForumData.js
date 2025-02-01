@@ -21,16 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(data => {
-            const place = data[0].place;
-            const placeArray = place.split(',');
+            // const place = data[0].place;
+            // const placeArray = place.split(',');
 
-            let forum_place = document.querySelector('.forum-info .place');
+            // let forum_place = document.querySelector('.forum-info .place');
             
-            if(placeArray.length >= 2) {
-                forum_place.innerText += ` "${placeArray[0]}" и ${placeArray[1]}`
-            }else {
-                forum_place.innerText += ` "${placeArray[0]}"`
-            }
+            // if(placeArray.length >= 2) {
+            //     forum_place.innerText += ` "${placeArray[0]}" и ${placeArray[1]}`
+            // }else {
+            //     forum_place.innerText += ` "${placeArray[0]}"`
+            // }
 
             // GET SPEAKERS FETCH
             fetch(`http://10.251.4.137/api/speakers/get_speakers?id=${data[0].id}`, {
@@ -140,52 +140,52 @@ document.addEventListener('DOMContentLoaded', function() {
             })
 
             // GET PROGRAM DATA
-            fetch(`http://10.251.4.137/api/program/get_program?forum_id=${data[0].id}`, {
-                method: 'GET'
-            })
-            .then(response => {
-                if(!response.ok) {
-                    throw new Error("Response Error: ", response.text())
-                }
+            // fetch(`http://10.251.4.137/api/program/get_program?forum_id=${data[0].id}`, {
+            //     method: 'GET'
+            // })
+            // .then(response => {
+            //     if(!response.ok) {
+            //         throw new Error("Response Error: ", response.text())
+            //     }
 
-                return response.json()
-            })
-            .then(data => {
-                let program_items = document.querySelector('.program .items');
-                program_items.innerHTML = '';
+            //     return response.json()
+            // })
+            // .then(data => {
+            //     let program_items = document.querySelector('.program .items');
+            //     program_items.innerHTML = '';
 
-                data.forEach(each => {
-                    let item = document.createElement('div');
-                    item.className = 'item';
+            //     data.forEach(each => {
+            //         let item = document.createElement('div');
+            //         item.className = 'item';
 
-                    let big_div = document.createElement('div');
-                    big_div.className = 'big';
+            //         let big_div = document.createElement('div');
+            //         big_div.className = 'big';
 
-                    let time_span = document.createElement('span');
-                    time_span.innerText = each.time;
+            //         let time_span = document.createElement('span');
+            //         time_span.innerText = each.time;
 
-                    let title_span = document.createElement('span');
-                    title_span.innerText = each.title;
+            //         let title_span = document.createElement('span');
+            //         title_span.innerText = each.title;
 
-                    big_div.appendChild(time_span);
-                    big_div.appendChild(title_span);
+            //         big_div.appendChild(time_span);
+            //         big_div.appendChild(title_span);
 
-                    let small_div = document.createElement('div');
-                    small_div.className = 'small';
+            //         let small_div = document.createElement('div');
+            //         small_div.className = 'small';
 
-                    let small_span = document.createElement('span');
-                    small_span.innerHTML = each.text;
+            //         let small_span = document.createElement('span');
+            //         small_span.innerHTML = each.text;
 
-                    small_div.appendChild(small_span);
+            //         small_div.appendChild(small_span);
 
-                    item.appendChild(big_div);
-                    item.appendChild(small_div);
-                    program_items.appendChild(item);
-                });
-            })
-            .catch(error => {
-                console.error('Catch Error: ', error.message);
-            })
+            //         item.appendChild(big_div);
+            //         item.appendChild(small_div);
+            //         program_items.appendChild(item);
+            //     });
+            // })
+            // .catch(error => {
+            //     console.error('Catch Error: ', error.message);
+            // })
         })      
         .catch(error => {
             console.error('Catch Error: ', error.message);
