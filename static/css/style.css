@@ -52,7 +52,7 @@ header .menus ul{
 
     list-style-type: none;
 
-    gap: 50px;
+    gap: 30px;
 }
 
 header .menus ul li {
@@ -153,6 +153,10 @@ header .image:nth-child(1) img{
     display: inline-block;
     cursor: pointer;
     z-index: 100;
+}
+
+header .menus ul .dropdown_lang {
+    font-size: 15px;
 }
 
 header .menus  ul .dropdown_lang:hover {
