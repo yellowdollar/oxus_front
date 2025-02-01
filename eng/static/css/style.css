@@ -157,34 +157,12 @@ header .image:nth-child(1) img{
     z-index: 100;
 }
 
-.dropdown_lang .dropdown_menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    min-width: 120px;
-    border-radius: 5px;
+header .menus  ul .dropdown_lang:hover {
+    font-weight: 400;
 }
 
-.dropdown_lang:hover .dropdown_menu {
-    display: block;
-}
-
-.dropdown_lang .dropdown_menu li {
-    padding: 8px 15px;
-}
-
-.dropdown_lang .dropdown_menu li:hover {
-    background-color: #f0f0f0;
-}
-
-.dropdown_lang .dropdown_menu li a {
-    text-decoration: none;
-    color: black;
-    display: block;
+header .menus  ul .dropdown_lang a:hover {
+    font-weight: 600;
 }
 
 header .menus .logo {
