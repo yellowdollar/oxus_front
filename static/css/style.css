@@ -191,7 +191,7 @@ header .mobile-hamburger {
         height: 70px;
         width: 440px;
         position: relative;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     header .mobile-hamburger {
@@ -227,6 +227,31 @@ header .mobile-hamburger {
         flex-direction: column;
         gap: 5px;
     }
+}
+
+.mobile_lang {
+    height: 40px;
+    width: 100px;
+
+    margin-top: 20px;
+    margin-right: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 440px) {
+    .mobile_lang {
+        display: flex;
+    }
+}
+
+.mobile_lang a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .mobile_menu {
