@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if(forumId) {
         // MAIN FETCH
-        fetch(`http://10.251.4.137/api/forum/get_forum?id=${forumId}`, {
+        fetch(`http://147.45.233.158/api/forum/get_forum?id=${forumId}`, {
             method: 'GET'
         })
         .then(response => {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // }
 
             // GET SPEAKERS FETCH
-            fetch(`http://10.251.4.137/api/speakers/get_speakers?id=${data[0].id}`, {
+            fetch(`http://147.45.233.158/api/speakers/get_speakers?id=${data[0].id}`, {
                 method: 'GET'
             })
             .then(response => {
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     image_div.className = 'image';
 
                     let img = document.createElement('img');
-                    img.src = `http://10.251.4.137/api/news/upload?photo_path=${each.photo_path}`;
+                    img.src = `http://147.45.233.158/api/news/upload?photo_path=${each.photo_path}`;
                     image_div.appendChild(img);
 
                     
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
 
             // GET HONORARY FETCH
-            fetch(`http://10.251.4.137/api/honorary/get_honorary?forum_id=${data[0].id}`, {
+            fetch(`http://147.45.233.158/api/honorary/get_honorary?forum_id=${data[0].id}`, {
                 method: 'GET'
             })
             .then(response => {
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     image_div.className = 'image';
 
                     let img = document.createElement('img');
-                    img.src = `http://10.251.4.137/api/news/upload?photo_path=${each.photo_path}`;
+                    img.src = `http://147.45.233.158/news/upload?photo_path=${each.photo_path}`;
                     image_div.appendChild(img);
 
                     let fio_div = document.createElement('div');

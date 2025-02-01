@@ -16,7 +16,7 @@ regist_send.addEventListener('click', function() {
     formData.append('smth', regist_smth)
 
 
-    fetch('http://10.251.4.137/api/regist/add_regist', {
+    fetch('http://147.45.233.158/api/regist/add_regist', {
         method: 'POST',
         body: formData
     })

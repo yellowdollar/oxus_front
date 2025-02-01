@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileForumMenu.style.display = mobileForumMenu.style.display === 'block' ? 'none' : 'block';
     });
 
-    fetch('http://10.251.4.137/api/forum/get_forum', {
+    fetch('http://147.45.233.158/api/forum/get_forum', {
         method: 'GET'
     })
     .then(response => {
