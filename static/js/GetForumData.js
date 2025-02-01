@@ -21,10 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(data => {
-            let block_2_header = document.querySelector('.block2 .header');
-
-            block_2_header.innerText = `До Начала Международного Ювелирного Форума ${data[0].year} Осталось:` 
-        
             const place = data[0].place;
             const placeArray = place.split(',');
 

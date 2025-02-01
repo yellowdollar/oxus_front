@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="sign_in_content">
+        <div class="error_text">
+            Неправильный логин или пароль
+        </div>
+        <div class="sign_in">
+            <div class="header">
+                Вход
+            </div>
+            <div class="form">
+                <div class="item">
+                    <label>Логин</label>
+                    <input type="text" id="login">
+                </div>
+                <div class="item">
+                    <label>Пароль</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="item">
+                    <input type="submit" value="Авторизоваться" id="sign_button">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign In -->
+    <script src="static/js/fetches/SignIn/SignInFetch.js"></script>
+
+    <!-- If Auth -->
+    <script src="static/js/fetches/SignIn/IsAuth.js"></script>
+</body>
+</html>

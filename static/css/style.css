@@ -823,7 +823,7 @@ header .mobile-hamburger .line{
 }
 
 .content .block2 section .expire {
-    height: 134px;
+    height: 104px;
 
     margin-top: 40px;
     width: 60%;
@@ -843,7 +843,7 @@ header .mobile-hamburger .line{
 
 .content .block2 section .expire .item{
     height: 100%;
-    width: 191px;
+    width: 101px;
     
     display: flex;
     flex-direction: column;
@@ -870,7 +870,7 @@ header .mobile-hamburger .line{
     align-items: center;
     justify-content: center;
 
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 800;
 
     color: white;
@@ -1436,11 +1436,9 @@ footer .side .rights{
 }
 
 .content .forum-info {
-    height: 552px;
+    min-height: 600px;
     width: 100%;
     
-    background-color: white;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1448,7 +1446,7 @@ footer .side .rights{
 
 @media (max-width: 440px) {
     .content .forum-info {
-        height: 1000px;
+        min-height: 1000px;
         width: 440px;
     }
 }
@@ -1462,11 +1460,21 @@ footer .side .rights{
 }
 
 .content .forum-info .text{
-    height: 100px;
+    min-height: 100px;
     width: 67%;
-    text-align: center;
+    text-align: justify;
 
-    margin-top: 14px;
+    margin-top: 30px;
+}
+
+.content .forum-info .text span ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .forum-info .text span:nth-child(6) ul{
+    gap: 5px;
 }
 
 @media (max-width: 440px) {
@@ -1477,6 +1485,7 @@ footer .side .rights{
 }
 
 .content .forum-info .place{
+    min-height: 100px;
     margin-top: 30px;
 
     width: 35%;
@@ -1497,17 +1506,21 @@ footer .side .rights{
 }
 
 .content .forum-info .extra {
-    height: 450px;
+    height: 200px;
     width: 100%;
+
+    margin-top: 30px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px;
+    gap: 50px;
 }
 
 @media (max-width: 440px) {
     .content .forum-info .extra {
+        height: 400px;
+        margin-bottom: 30px;
         flex-direction: column;
         gap: 50px;
     }
@@ -1515,8 +1528,8 @@ footer .side .rights{
 
 .content .forum-info .extra .item{
     height: 100px;
-    min-width: 167px;
-
+    width: 300px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
