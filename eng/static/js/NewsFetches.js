@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             block_item.appendChild(block_image);
 
             let news_title = document.createElement('label');
-            news_title.innerText = each.title;
+            news_title.innerText = each.title_eng;
             block_item.appendChild(news_title);
 
             let block_date = document.createElement('div');
@@ -101,19 +101,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 date_span.innerText = each.date;
                 date.appendChild(date_span);
 
-                let title = document.createElement('div');
-                title.className = 'title';
-                title.innerText = each.title;
+                // let title = document.createElement('div');
+                // title.className = 'title';
+                // title.innerText = each.title;
 
-                let text = document.createElement('div');
-                text.className = 'text';
-                text.innerHTML = each.text;
+                // let text = document.createElement('div');
+                // text.className = 'text';
+                // text.innerHTML = each.text;
 
                 one_new.appendChild(all_images);
                 
                 one_new.appendChild(date);
-                one_new.appendChild(title);
-                one_new.appendChild(text);
+                // one_new.appendChild(title);
+                // one_new.appendChild(text);
             });
         });
     })
