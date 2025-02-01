@@ -103,11 +103,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 let title = document.createElement('div');
                 title.className = 'title';
-                title.innerText = each.title;
+                title.innerText = each.title_eng;
 
                 let text = document.createElement('div');
                 text.className = 'text';
-                text.innerHTML = each.text;
+                text.innerHTML = each.text_eng;
 
                 one_new.appendChild(all_images);
                 
