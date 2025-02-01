@@ -2615,13 +2615,7 @@ footer .side .rights{
 @media (max-width: 440px) {
     .news .news_content {
         width: 430px;
-        margin-left: 20px;
-    }
-}
-
-@media (max-width: 440px) {
-    .news .news_content {
-        margin-left: 50px;
+        margin-left: 5px;
     }
 }
 
