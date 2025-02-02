@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     image_div.className = 'image';
 
                     let img = document.createElement('img');
-                    img.src = `http://147.45.233.158/news/upload?photo_path=${each.photo_path}`;
+                    img.src = `http://147.45.233.158/api/news/upload?photo_path=${each.photo_path}`;
                     image_div.appendChild(img);
 
                     let fio_div = document.createElement('div');
