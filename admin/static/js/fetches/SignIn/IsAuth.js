@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     formData.append('token', token)
 
-    fetch('http://10.251.4.137/api/auth/check_cookie', {
+    fetch('http://147.45.233.158/api/auth/check_cookie', {
         method: 'POST',
         body: formData
     })
