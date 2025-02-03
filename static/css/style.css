@@ -551,11 +551,6 @@ header .mobile-hamburger .line{
     display: block;
 }
 
-.hover_forum_menu.mobile ul {
-    background-color: lightyellow; /* Для проверки */
-}
-
-
 .content {
     min-height: 500px;
     width: 100%;
