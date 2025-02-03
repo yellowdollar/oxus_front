@@ -2423,6 +2423,8 @@ footer .side .rights{
     font-size: 21px;
     font-weight: 700;
 
+    text-align: center;
+
     color: #800116;
 }
 
@@ -2600,6 +2602,8 @@ footer .side .rights{
 .content .guests .items .item .fio span:nth-child(1){
     font-size: 21px;
     font-weight: 700;
+
+    text-align: center;
 
     color: #800116;
 }
