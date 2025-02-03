@@ -2,12 +2,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const hoverForumMenu = document.querySelector('.hover_forum_menu');
     const hoverForumBtn = document.getElementById('hover_forum');
 
+    const mobileForumMenu = document.querySelector('.hover_forum_menu.mobile');
+    const mobileForumBtn = document.getElementById('mobile_hover_forum');
+
     // Показать/скрыть меню на ПК при клике на "Форум"
     hoverForumBtn.addEventListener('click', function() {
         hoverForumMenu.style.display = hoverForumMenu.style.display === 'block' ? 'none' : 'block';
     });
 
-    console.log('Fetching data...');
+    // Показать/скрыть меню на мобильной версии при клике
+    mobileForumBtn.addEventListener('click', function() {
+        mobileForumMenu.style.display = mobileForumMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
     fetch('https://jewelryforum.tj/api/forum/get_forum', {
         method: 'GET'
     })
@@ -29,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
         data.forEach(each => {
             let liDesktop = document.createElement('li');
             let aDesktop = document.createElement('a');
-            aDesktop.innerText = `Форум ${each.year}`;
-            aDesktop.href = `forum.html?${each.id}`;
+            aDesktop.innerText = Форум ${each.year};
+            aDesktop.href = forum.html?${each.id};
             aDesktop.addEventListener('click', function() {
                 hoverForumMenu.style.display = 'none'; // Закрываем меню после клика
             });
@@ -41,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Копируем для мобильной версии
             let liMobile = document.createElement('li');
             let aMobile = document.createElement('a');
-            aMobile.innerText = `Форум ${each.year}`;
-            aMobile.href = `forum.html?${each.id}`;
+            aMobile.innerText = Форум ${each.year};
+            aMobile.href = forum.html?${each.id};
             aMobile.addEventListener('click', function() {
                 mobileForumMenu.style.display = 'none'; // Закрываем меню после клика
             });
