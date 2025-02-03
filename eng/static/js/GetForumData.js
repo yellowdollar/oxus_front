@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
 
             // GET PROGRAM DATA
-            // fetch(`http://10.251.4.137/api/program/get_program?forum_id=${data[0].id}`, {
+            // fetch(`https://10.251.4.137/api/program/get_program?forum_id=${data[0].id}`, {
             //     method: 'GET'
             // })
             // .then(response => {
