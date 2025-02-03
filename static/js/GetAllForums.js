@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
         data.forEach(each => {
             let liDesktop = document.createElement('li');
             let aDesktop = document.createElement('a');
-            aDesktop.innerText = Форум ${each.year};
-            aDesktop.href = forum.html?${each.id};
+            aDesktop.innerText = `Форум ${each.year}`;
+            aDesktop.href = `forum.html?${each.id}`;
             aDesktop.addEventListener('click', function() {
                 hoverForumMenu.style.display = 'none'; // Закрываем меню после клика
             });
