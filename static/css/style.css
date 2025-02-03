@@ -1768,9 +1768,11 @@ header .mobile-hamburger .line{
 
 @media (max-width: 768px) {
     .content .forum-regist .form .items .row{
+        min-height: 300px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        gap: 10px;
     }
 }
 
@@ -1832,6 +1834,15 @@ header .mobile-hamburger .line{
     gap: 150px;
 }
 
+@media (max-width: 768px) {
+    .content .forum-regist .form .items .row:nth-child(2){
+        min-height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+}
 
 .content .forum-regist .form .items .row:nth-child(2) .item:nth-child(2) input{
     width: 660px;
