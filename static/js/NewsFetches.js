@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let one_new = document.querySelector('.news_content');
     one_new.innerHTML = '';
-    fetch('https://147.45.233.158/api/news/get_all_news', {
+    fetch('https://jewelryforum.tj/api/news/get_all_news', {
         method: 'GET',
     })
     .then(response => {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (photoPaths[0] === "No Photo") {
                 news_image.src = 'static/images/partners.png';
             } else {
-                news_image.src = `https://147.45.233.158/api/news/upload?photo_path=${photoPaths[0]}`;
+                news_image.src = `https://jewelryforum.tj/api/news/upload?photo_path=${photoPaths[0]}`;
             }
             block_image.appendChild(news_image);
     
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 opened_image.classList = 'opened_image';
 
                 let opened_img = document.createElement('img');
-                opened_img.src = `https://147.45.233.158/api/news/upload?photo_path=${photoPaths[0]}`;
+                opened_img.src = `https://jewelryforum.tj/api/news/upload?photo_path=${photoPaths[0]}`;
                 opened_image.appendChild(opened_img);
 
                 let closed_images = document.createElement('div');
@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     image_div.className = 'image';
 
                     let cl_image = document.createElement('img');
-                    cl_image.src = `https://147.45.233.158/api/news/upload?photo_path=${photoPaths[i]}`;
+                    cl_image.src = `https://jewelryforum.tj/api/news/upload?photo_path=${photoPaths[i]}`;
                     image_div.appendChild(cl_image);
                     closed_images.appendChild(image_div);
 
                     image_div.addEventListener('click', function() {
-                        opened_img.src = `https://147.45.233.158/api/news/upload?photo_path=${photoPaths[i]}`
+                        opened_img.src = `https://jewelryforum.tj/api/news/upload?photo_path=${photoPaths[i]}`
                     });
                 }
 

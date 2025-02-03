@@ -418,6 +418,17 @@ header .mobile-hamburger {
     }
 }
 
+@media (max-width: 369px) {
+    .mobile_menu {
+        display: none;
+    }
+
+    .mobile_menu.show {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .exit {
     width: 40px;
     height: 40px;
@@ -539,6 +550,11 @@ header .mobile-hamburger .line{
     color: black;
     display: block;
 }
+
+.hover_forum_menu.mobile ul {
+    background-color: lightyellow; /* Для проверки */
+}
+
 
 .content {
     min-height: 500px;

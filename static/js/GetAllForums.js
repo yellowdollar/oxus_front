@@ -2,20 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const hoverForumMenu = document.querySelector('.hover_forum_menu');
     const hoverForumBtn = document.getElementById('hover_forum');
 
-    const mobileForumMenu = document.querySelector('.hover_forum_menu.mobile');
-    const mobileForumBtn = document.getElementById('mobile_hover_forum');
-
     // Показать/скрыть меню на ПК при клике на "Форум"
     hoverForumBtn.addEventListener('click', function() {
         hoverForumMenu.style.display = hoverForumMenu.style.display === 'block' ? 'none' : 'block';
     });
 
-    // Показать/скрыть меню на мобильной версии при клике
-    mobileForumBtn.addEventListener('click', function() {
-        mobileForumMenu.style.display = mobileForumMenu.style.display === 'block' ? 'none' : 'block';
-    });
-
-    fetch('https://147.45.233.158/api/forum/get_forum', {
+    console.log('Fetching data...');
+    fetch('https://jewelryforum.tj/api/forum/get_forum', {
         method: 'GET'
     })
     .then(response => {
