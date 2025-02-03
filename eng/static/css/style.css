@@ -4845,3 +4845,20 @@ blockquote {
         gap: 10px;
     }
 }
+
+@media (max-width: 440px) {
+
+    .content .main-image section span:nth-child(1) {
+        width: 390px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+
+    .content .main-image section span:nth-child(2) {
+        width: 390px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 0;
+    }
+}

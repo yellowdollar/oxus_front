@@ -693,7 +693,7 @@ header .mobile-hamburger .line{
         width: 750px;
         position: absolute;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start;
         bottom: 0px;
         left: 0px;
 
@@ -725,7 +725,7 @@ header .mobile-hamburger .line{
         width: 420px;
         position: absolute;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start;
         bottom: 0px;
         left: 0px;
 
@@ -807,6 +807,7 @@ header .mobile-hamburger .line{
 
 @media (max-width: 440px) {
     .content .main-image section span:nth-child(2) {
+        width: 390px;
         margin-left: 15px;
         font-size: 22px;
         font-weight: 600;
