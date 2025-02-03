@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Копируем для мобильной версии
             let liMobile = document.createElement('li');
             let aMobile = document.createElement('a');
-            aMobile.innerText = Форум ${each.year};
-            aMobile.href = forum.html?${each.id};
+            aMobile.innerText = `Форум ${each.year}`;
+            aMobile.href = `forum.html?${each.id}`;
             aMobile.addEventListener('click', function() {
                 mobileForumMenu.style.display = 'none'; // Закрываем меню после клика
             });
