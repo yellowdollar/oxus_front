@@ -2355,7 +2355,7 @@ footer .side .rights{
 
 .content .speakers_experts .items{
     min-height: 380px;
-    width: 1180px;
+    width: 95%;
 
     display: flex;
     justify-content: flex-start;
@@ -2365,7 +2365,7 @@ footer .side .rights{
     margin-top: 40px;
     margin-bottom: 30px;
 
-    gap: 53px;
+    gap: 5px;
 }
 
 @media (max-width: 1152px) {
@@ -2406,8 +2406,8 @@ footer .side .rights{
 }
 
 .content .speakers_experts .items .item{
-    min-height: 300px;
-    width: 500px;
+    min-height: 250px;
+    width: 30%;
 
     display: flex;
     flex-direction: row;
@@ -2458,10 +2458,9 @@ footer .side .rights{
     }
 }
 
-
 .content .speakers_experts .items .item .image{
-    height: 260px;
-    width: 200px;
+    height: 160px;
+    width: 140px;
 
     flex-shrink: 0;
 
@@ -2510,7 +2509,7 @@ footer .side .rights{
 
 .content .speakers_experts .items .item .fio{
     min-height: 50px;
-    width: 50%;
+    width: 58%;
     margin-top: 0;
 
     display: flex;
@@ -2530,7 +2529,7 @@ footer .side .rights{
 }
 
 .content .speakers_experts .items .item .fio span:nth-child(1){
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 700;
 
     text-align: center;
@@ -2542,7 +2541,7 @@ footer .side .rights{
 
     position: relative;
     right: 10px;
-    top: 25px;
+    top: 15px;
 }
 
 @media (max-width: 440px) {
@@ -2592,7 +2591,7 @@ footer .side .rights{
 
     position: relative;
     left: 25px;
-    top: 50px;
+    top: 25px;
 }
 
 @media (max-width: 440px) {
@@ -2652,14 +2651,12 @@ footer .side .rights{
 }
 
 .content .guests {
-    min-height: 522px;
+    min-height: 498px;
     width: 100%;
-
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-color: #F5F5F5;
 }
 
 @media (max-width: 440px) {
@@ -2674,99 +2671,77 @@ footer .side .rights{
     }
 }
 
-.content .guests .header {
+.content .guests .header{
     height: 74px;
     width: 100%;
-    margin-top: 0px;
-
-    background-color: #FAB000;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
 
     font-size: 24px;
     font-weight: 800;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FAB000;
+
+    color: white;
 }
 
 .content .guests .items{
-    min-height: 360px;
-    width: 1180px;
+    min-height: 380px;
+    width: 95%;
 
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-
     flex-wrap: wrap;
 
     margin-top: 40px;
     margin-bottom: 30px;
 
-    gap: 53px;
-}
-
-@media (max-width: 1536px) {
-    .content .guests .items {
-        width: 75%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 1280px) {
-    .content .guests .items {
-        width: 90%;
-        justify-content: center;
-    }
+    gap: 5px;
 }
 
 @media (max-width: 1152px) {
-    .content .guests .items {
+    .content .guests .items{
         width: 1130px;
-        justify-content: center;
     }
 }
 
 @media (max-width: 1050px) {
-    .content .guests .items {
+    .content .guests .items{
         width: 1030px;
-        justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
-    .content .guests .items {
+    .content .guests .items{
         width: 730px;
-        justify-content: center;
     }
 }
 
 @media (max-width: 650px) {
-    .content .guests .items {
-        width: 650px;
-        justify-content: center;
+    .content .guests .items{
+        width: 620px;
     }
 }
 
 @media (max-width: 440px) {
-    .content .guests .items {
+    .content .guests .items{
         width: 440px;
-        justify-content: center;
+        gap: 10px;
     }
 }
 
 @media (max-width: 369px) {
-    .content .guests .items {
+    .content .guests .items{
         width: 349px;
-        justify-content: center;
     }
 }
 
 .content .guests .items .item{
-    min-height: 300px;
-    width: 500px;
+    min-height: 220px;
+    width: 30%;
 
     display: flex;
     flex-direction: row;
@@ -2817,10 +2792,9 @@ footer .side .rights{
     }
 }
 
-
 .content .guests .items .item .image{
-    height: 260px;
-    width: 200px;
+    height: 160px;
+    width: 140px;
 
     flex-shrink: 0;
 
@@ -2869,7 +2843,7 @@ footer .side .rights{
 
 .content .guests .items .item .fio{
     min-height: 50px;
-    width: 60%;
+    width: 58%;
     margin-top: 0;
 
     display: flex;
@@ -2889,7 +2863,7 @@ footer .side .rights{
 }
 
 .content .guests .items .item .fio span:nth-child(1){
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 
     text-align: left;
@@ -2901,16 +2875,15 @@ footer .side .rights{
 
     position: relative;
     right: 10px;
-    top: 25px;
+    top: 15px;
 }
 
 @media (max-width: 440px) {
     .content .guests .items .item .fio span:nth-child(1){
-        width: 100%;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
     
-        text-align: left;
+        text-align: center;
     
         color: white;
 
@@ -2942,7 +2915,6 @@ footer .side .rights{
 }
 
 .content .guests .items .item .fio span:nth-child(2){
-    width: 90%;
     font-size: 14px;
     font-weight: 700;
 
@@ -2953,12 +2925,11 @@ footer .side .rights{
 
     position: relative;
     left: 25px;
-    top: 50px;
+    top: 25px;
 }
 
 @media (max-width: 440px) {
     .content .guests .items .item .fio span:nth-child(2){
-        width: 100%;
         font-size: 14px;
         font-weight: 800;
     
