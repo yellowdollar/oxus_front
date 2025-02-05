@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     item.appendChild(image_div);
                     item.appendChild(fio_div);
 
-                    let line_div = document.createElement('div');
-                    line_div.className = 'line';
+                    // let line_div = document.createElement('div');
+                    // line_div.className = 'line';
 
-                    item.appendChild(line_div);
+                    // fio_div.appendChild(line_div);
 
                     speakers_experts_items.appendChild(item);
                 });
@@ -128,9 +128,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     item.append(image_div);
                     item.appendChild(fio_div);
 
-                    let line = document.createElement('div');
-                    line.className = 'line';
-                    item.appendChild(line);
+                    // let line = document.createElement('div');
+                    // line.className = 'line';
+                    // item.appendChild(line);
                     
                     guests_items.appendChild(item);
                 });
