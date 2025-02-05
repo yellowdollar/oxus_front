@@ -2348,7 +2348,7 @@ footer .side .rights{
     align-items: center;
     justify-content: center;
 
-    background-color: #FAB000;
+    background-color: #800116;
 
     text-align: center;
 
@@ -2408,7 +2408,7 @@ footer .side .rights{
 }
 
 .content .speakers_experts .items .item{
-    min-height: 240px;
+    min-height: 220px;
     width: 30%;
 
     display: flex;
@@ -2770,7 +2770,7 @@ footer .side .rights{
 }
 
 .content .guests .items .item{
-    min-height: 220px;
+    min-height: 240px;
     width: 30%;
 
     display: flex;
@@ -2780,6 +2780,21 @@ footer .side .rights{
     padding: 15px;
 
     border: 3px solid #800116;
+}
+
+@media (max-width: 1360px) {
+    .content .guests .items .item{
+        min-height: 280px;
+        width: 30%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    
+        padding: 15px;
+    
+        border: 3px solid #800116;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2799,7 +2814,7 @@ footer .side .rights{
 
 @media (max-width: 440px) {
     .content .guests .items .item {
-        min-height: 280px;
+        min-height: 300px;
         width: 440px;
         align-items: flex-start;
         flex-direction: row;
@@ -2821,7 +2836,7 @@ footer .side .rights{
 
 @media (max-width: 369px) {
     .content .guests .items .item {
-        min-height: 320px;
+        min-height: 340px;
         width: 369px;
         align-items: flex-start;
         flex-direction: row;
@@ -2936,7 +2951,7 @@ footer .side .rights{
 
 @media (max-width: 440px) {
     .content .guests .items .item .fio span:nth-child(1){
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
     
         text-align: left;

@@ -2348,7 +2348,7 @@ footer .side .rights{
     align-items: center;
     justify-content: center;
 
-    background-color: #FAB000;
+    background-color: #800116;
 
     text-align: center;
 
@@ -2770,7 +2770,7 @@ footer .side .rights{
 }
 
 .content .guests .items .item{
-    min-height: 220px;
+    min-height: 200px;
     width: 30%;
 
     display: flex;
