@@ -2358,7 +2358,7 @@ footer .side .rights{
     width: 1180px;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 
@@ -2406,12 +2406,16 @@ footer .side .rights{
 }
 
 .content .speakers_experts .items .item{
-    min-height: 200px;
-    width: 325px;
+    min-height: 300px;
+    width: 500px;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding: 15px;
+
+    border: 3px solid #800116;
 }
 
 @media (max-width: 440px) {
@@ -2427,6 +2431,9 @@ footer .side .rights{
 
         border-top: 2px solid #800116;
         border-bottom: 2px solid #800116;
+
+        border-left: none;
+        border-right: none;
 
         position: relative;
     }
@@ -2446,6 +2453,7 @@ footer .side .rights{
         border-top: 2px solid #800116;
         border-bottom: 2px solid #800116;
 
+        
         position: relative;
     }
 }
@@ -2455,6 +2463,8 @@ footer .side .rights{
     height: 260px;
     width: 200px;
 
+    flex-shrink: 0;
+
     border-radius: 0;
 }
 
@@ -2463,6 +2473,8 @@ footer .side .rights{
         height: 250px;
         width: 180px;
     
+        flex-shrink: 1;
+
         border-radius: 0;
     }
 }
@@ -2480,7 +2492,7 @@ footer .side .rights{
     height: 100%;
     width: 100%;
 
-    border-radius: 20px;
+    border-radius: 0;
 
     object-fit: cover;
 }
@@ -2497,14 +2509,14 @@ footer .side .rights{
 }
 
 .content .speakers_experts .items .item .fio{
-    min-height: 40px;
-    width: 90%;
-    margin-top: 20px;
+    min-height: 50px;
+    width: 50%;
+    margin-top: 0;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 @media (max-width: 440px) {
@@ -2522,8 +2534,15 @@ footer .side .rights{
     font-weight: 700;
 
     text-align: center;
+    
+    color: white;
 
-    color: #800116;
+    background-color: #800116;
+    padding: 15px;
+
+    position: relative;
+    right: 10px;
+    top: 25px;
 }
 
 @media (max-width: 440px) {
@@ -2567,9 +2586,13 @@ footer .side .rights{
     font-weight: 700;
 
     margin-top: 10px;
-
+    
     color: black;
-    text-align: center;
+    text-align: left;
+
+    position: relative;
+    left: 25px;
+    top: 50px;
 }
 
 @media (max-width: 440px) {
@@ -2674,7 +2697,7 @@ footer .side .rights{
     width: 1180px;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 
     flex-wrap: wrap;
@@ -2742,12 +2765,16 @@ footer .side .rights{
 }
 
 .content .guests .items .item{
-    min-height: 200px;
-    width: 325px;
+    min-height: 300px;
+    width: 500px;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding: 15px;
+
+    border: 3px solid #800116;
 }
 
 @media (max-width: 440px) {
@@ -2763,6 +2790,9 @@ footer .side .rights{
 
         border-top: 2px solid #800116;
         border-bottom: 2px solid #800116;
+
+        border-left: none;
+        border-right: none;
 
         position: relative;
     }
@@ -2782,6 +2812,7 @@ footer .side .rights{
         border-top: 2px solid #800116;
         border-bottom: 2px solid #800116;
 
+        
         position: relative;
     }
 }
@@ -2791,6 +2822,8 @@ footer .side .rights{
     height: 260px;
     width: 200px;
 
+    flex-shrink: 0;
+
     border-radius: 0;
 }
 
@@ -2799,6 +2832,8 @@ footer .side .rights{
         height: 250px;
         width: 180px;
     
+        flex-shrink: 1;
+
         border-radius: 0;
     }
 }
@@ -2816,7 +2851,7 @@ footer .side .rights{
     height: 100%;
     width: 100%;
 
-    border-radius: 20px;
+    border-radius: 0;
 
     object-fit: cover;
 }
@@ -2833,14 +2868,14 @@ footer .side .rights{
 }
 
 .content .guests .items .item .fio{
-    min-height: 40px;
-    width: 90%;
-    margin-top: 20px;
+    min-height: 50px;
+    width: 50%;
+    margin-top: 0;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 @media (max-width: 440px) {
@@ -2858,8 +2893,15 @@ footer .side .rights{
     font-weight: 700;
 
     text-align: center;
+    
+    color: white;
 
-    color: #800116;
+    background-color: #800116;
+    padding: 15px;
+
+    position: relative;
+    right: 10px;
+    top: 25px;
 }
 
 @media (max-width: 440px) {
@@ -2903,9 +2945,13 @@ footer .side .rights{
     font-weight: 700;
 
     margin-top: 10px;
-
+    
     color: black;
-    text-align: center;
+    text-align: left;
+
+    position: relative;
+    left: 25px;
+    top: 50px;
 }
 
 @media (max-width: 440px) {
