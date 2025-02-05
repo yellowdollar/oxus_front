@@ -2961,7 +2961,7 @@ footer .side .rights{
 
 @media (max-width: 440px) {
     .content .guests .items .item .fio span:nth-child(1){
-        width: 100%;
+        width: 105%;
         font-size: 14px;
         font-weight: 700;
     

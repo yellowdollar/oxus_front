@@ -2928,15 +2928,16 @@ footer .side .rights{
     color: white;
 
     background-color: #800116;
-    padding: 5px;
+    padding: 3px;
 
     position: relative;
-    right: 10px;
+    right: 15px;
     top: 15px;
 }
 
 @media (max-width: 440px) {
     .content .guests .items .item .fio span:nth-child(1){
+        width: 105%;
         font-size: 16px;
         font-weight: 700;
     
