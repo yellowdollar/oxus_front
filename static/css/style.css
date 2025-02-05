@@ -2897,7 +2897,7 @@ footer .side .rights{
     color: white;
 
     background-color: #800116;
-    padding: 15px;
+    padding: 5px;
 
     position: relative;
     right: 10px;
@@ -2942,7 +2942,7 @@ footer .side .rights{
 }
 
 .content .guests .items .item .fio span:nth-child(2){
-    width: 98%;
+    width: 90%;
     font-size: 14px;
     font-weight: 700;
 
