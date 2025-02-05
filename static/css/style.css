@@ -5250,3 +5250,53 @@ blockquote {
 
     user-select: none;
 }
+
+.content .buttons_anchors {
+    height: 75px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.content .buttons_anchors input {
+    height: 45px;
+    width: 230px;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    color: white;
+
+    border: none;
+    outline: none;
+
+    border-radius: 50px;
+}
+
+.content .buttons_anchors input:nth-child(1) {
+    background-color: #800116;
+
+    transition: box-shadow 0.5s ease;
+}
+
+.content .buttons_anchors input:nth-child(1):hover {
+    cursor: pointer;
+
+    box-shadow: 0px 0px 10px 1px #800116;
+}
+
+
+.content .buttons_anchors input:nth-child(2) {
+    background-color: #FAB000;
+    transition: box-shadow 0.5s ease;
+}
+
+.content .buttons_anchors input:nth-child(2):hover {
+    cursor: pointer;
+
+    box-shadow: 0px 0px 10px 1px #FAB000;
+}
