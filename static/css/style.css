@@ -5355,12 +5355,19 @@ blockquote {
     background-color: white;
 
     border-radius: 15px;
+    
 }
 
 @media (max-width: 440px) {
     .push_notifications .notification.show {
         min-height: 400px;
-        width: 400px;
+        width: 89%;
+    }
+
+    .push_notifications .notification {
+        position: fixed;
+        right: 15px;
+        bottom: 30px;
     }
 }
 
