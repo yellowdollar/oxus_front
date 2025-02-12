@@ -5312,18 +5312,7 @@ blockquote {
     box-shadow: 0px 0px 10px 1px #FAB000;
 }
 
-.push_notifications {
-    height: 100%;
-    width: 100%;
-
-    position: fixed;
-    left: 0; 
-    top: 0;
-
-    z-index: 1999;
-}
-
-.push_notifications .notification {
+.notification {
     height: 35px;
     width: 35px;
 
@@ -5345,9 +5334,11 @@ blockquote {
 
     display: flex;
     flex-direction: column;
+
+    z-index: 99;
 }
 
-.push_notifications .notification.show {
+.notification.show {
     cursor: auto;
     min-height: 300px;
     width: 600px;
@@ -5359,12 +5350,12 @@ blockquote {
 }
 
 @media (max-width: 440px) {
-    .push_notifications .notification.show {
+    .notification.show {
         min-height: 400px;
         width: 89%;
     }
 
-    .push_notifications .notification {
+    .notification {
         position: fixed;
         right: 15px;
         bottom: 30px;
@@ -5372,12 +5363,12 @@ blockquote {
 }
 
 @media (max-width: 369px) {
-    .push_notifications .notification.show {
+    .notification.show {
         min-height: 520px;
         width: 85%;
     }
 
-    .push_notifications .notification {
+    .notification {
         position: fixed;
         right: 15px;
         bottom: 30px;
@@ -5385,7 +5376,7 @@ blockquote {
 }
 
 
-.push_notifications .notification .exit {
+.notification .exit {
     display: none;
     position: absolute;
     top: 10px;
@@ -5395,31 +5386,31 @@ blockquote {
     cursor: pointer;
 }
 
-.push_notifications .notification.show .exit {
+.notification.show .exit {
     display: block;
 }
 
-.push_notifications .notification .exit .line {
+.notification .exit .line {
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: black;
 }
 
-.push_notifications .notification .exit .horizontal {
+.notification .exit .horizontal {
     transform: rotate(45deg);
 }
 
-.push_notifications .notification .exit .vertical {
+.notification .exit .vertical {
     transform: rotate(-45deg);
 }
 
-.push_notifications .notification .text {
+ .notification .text {
     margin-top: 5px;
     display: none;
 }
 
-.push_notifications .notification.show .text {
+.notification.show .text {
     min-height: 100px;
     width: 100%;
     display: block;
@@ -5427,13 +5418,13 @@ blockquote {
     gap: 15px;
 }
 
-.push_notifications .notification .text .header {
+.notification .text .header {
     font-size: 21px;
     font-weight: 700;
     text-align: center;
 }
 
-.push_notifications .notification .text span {
+.notification .text span {
     display: inline-block;
     width: 100%;
     font-size: 16px;
