@@ -5287,3 +5287,123 @@ blockquote {
 
     box-shadow: 0px 0px 10px 1px #FAB000;
 }
+
+.notification {
+    height: 35px;
+    width: 35px;
+
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+
+    background-color: #FAB000;
+
+    box-shadow: 0px 0px 10px 1px #767676;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    padding: 15px;
+    
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 99;
+}
+
+.notification.show {
+    cursor: auto;
+    min-height: 300px;
+    width: 600px;
+
+    background-color: white;
+
+    border-radius: 15px;
+    
+}
+
+@media (max-width: 440px) {
+    .notification.show {
+        min-height: 450px;
+        width: 88%;
+    }
+
+    .notification {
+        position: fixed;
+        right: 15px;
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 369px) {
+    .notification.show {
+        min-height: 520px;
+        width: 85%;
+    }
+
+    .notification {
+        position: fixed;
+        right: 15px;
+        bottom: 30px;
+    }
+}
+
+
+.notification .exit {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.notification.show .exit {
+    display: block;
+}
+
+.notification .exit .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.notification .exit .horizontal {
+    transform: rotate(45deg);
+}
+
+.notification .exit .vertical {
+    transform: rotate(-45deg);
+}
+
+ .notification .text {
+    margin-top: 5px;
+    display: none;
+}
+
+.notification.show .text {
+    min-height: 100px;
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notification .text .header {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.notification .text span {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
