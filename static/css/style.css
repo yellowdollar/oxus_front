@@ -5371,6 +5371,20 @@ blockquote {
     }
 }
 
+@media (max-width: 369px) {
+    .push_notifications .notification.show {
+        min-height: 520px;
+        width: 85%;
+    }
+
+    .push_notifications .notification {
+        position: fixed;
+        right: 15px;
+        bottom: 30px;
+    }
+}
+
+
 .push_notifications .notification .exit {
     display: none;
     position: absolute;
