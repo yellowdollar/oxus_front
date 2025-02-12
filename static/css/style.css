@@ -5311,3 +5311,111 @@ blockquote {
 
     box-shadow: 0px 0px 10px 1px #FAB000;
 }
+
+.push_notifications {
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    left: 0; 
+    top: 0;
+
+    z-index: 1999;
+}
+
+.push_notifications .notification {
+    height: 35px;
+    width: 35px;
+
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+
+    background-color: #FAB000;
+
+    box-shadow: 0px 0px 10px 1px #767676;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    padding: 15px;
+    
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.push_notifications .notification.show {
+    cursor: auto;
+    min-height: 300px;
+    width: 600px;
+
+    background-color: white;
+
+    border-radius: 15px;
+}
+
+@media (max-width: 440px) {
+    .push_notifications .notification.show {
+        min-height: 400px;
+        width: 400px;
+    }
+}
+
+.push_notifications .notification .exit {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.push_notifications .notification.show .exit {
+    display: block;
+}
+
+.push_notifications .notification .exit .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.push_notifications .notification .exit .horizontal {
+    transform: rotate(45deg);
+}
+
+.push_notifications .notification .exit .vertical {
+    transform: rotate(-45deg);
+}
+
+.push_notifications .notification .text {
+    margin-top: 5px;
+    display: none;
+}
+
+.push_notifications .notification.show .text {
+    min-height: 100px;
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.push_notifications .notification .text .header {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.push_notifications .notification .text span {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
