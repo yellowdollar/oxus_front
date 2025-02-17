@@ -4,11 +4,10 @@ function getCookie(name) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    let token = getCookie("token"); // Замените "auth_token" на нужное имя куки
-    
-    let formData = new FormData()
+    let token = getCookie('token');
 
-    formData.append('token', token)
+    let formData = new FormData();
+    formData.append('token', token);
 
     fetch('https://jewelryforum.tj/api/auth/check_cookie', {
         method: 'POST',
@@ -22,17 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
         return response.json();
     })
     .then(data => {
-        if(data.status_code == 200) {
-            window.location.href = 'admin.html';
-        }else {
-            deleteCookie('token');
-        }
-    })
+        console.log(data);
+    }) 
     .catch(error => {
-        console.error('Catch Error: ', error.message);
+        console.error('Catch error: ', error.message);
     })
 });
-
-function deleteCookie(name) {
-    document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-}
