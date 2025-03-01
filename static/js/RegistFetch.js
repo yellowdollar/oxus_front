@@ -5,7 +5,8 @@ regist_send.addEventListener('click', function() {
     let regist_surname = document.getElementById('regist_surname').value;
     let regist_email = document.getElementById('regist_email').value;
     let regist_phone = document.getElementById('regist_phone').value;
-    let regist_smth = document.getElementById('regist_smth').value
+    let regist_smth = document.getElementById('regist_smth').value;
+    let regist_job_title = document.getElementById('job_title').value;
 
     let formData = new FormData();
 
@@ -13,6 +14,7 @@ regist_send.addEventListener('click', function() {
     formData.append('surname', regist_surname),
     formData.append('email', regist_email),
     formData.append('phone', regist_phone),
+    formData.append('job_title', regist_job_title),
     formData.append('smth', regist_smth)
 
 

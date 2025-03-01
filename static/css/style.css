@@ -1846,7 +1846,7 @@ header .mobile-hamburger .line{
 }
 
 .content .forum-regist .form .items .row:nth-child(2) .item:nth-child(2) input{
-    width: 660px;
+    width: 300px;
 }
 
 @media (max-width: 1050px) {

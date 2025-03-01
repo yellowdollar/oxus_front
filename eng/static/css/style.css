@@ -1846,7 +1846,7 @@ header .mobile-hamburger .line{
 }
 
 .content .forum-regist .form .items .row:nth-child(2) .item:nth-child(2) input{
-    width: 660px;
+    width: 300px;
 }
 
 @media (max-width: 1050px) {
@@ -2408,7 +2408,7 @@ footer .side .rights{
 }
 
 .content .speakers_experts .items .item{
-    min-height: 220px;
+    min-height: 240px;
     width: 30%;
 
     display: flex;
@@ -2685,7 +2685,6 @@ footer .side .rights{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 }
 
 @media (max-width: 440px) {
@@ -2771,7 +2770,7 @@ footer .side .rights{
 }
 
 .content .guests .items .item{
-    min-height: 200px;
+    min-height: 240px;
     width: 30%;
 
     display: flex;
@@ -2781,6 +2780,21 @@ footer .side .rights{
     padding: 15px;
 
     border: 3px solid #800116;
+}
+
+@media (max-width: 1360px) {
+    .content .guests .items .item{
+        min-height: 280px;
+        width: 30%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    
+        padding: 15px;
+    
+        border: 3px solid #800116;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2800,7 +2814,7 @@ footer .side .rights{
 
 @media (max-width: 440px) {
     .content .guests .items .item {
-        min-height: 280px;
+        min-height: 300px;
         width: 440px;
         align-items: flex-start;
         flex-direction: row;
@@ -2822,7 +2836,7 @@ footer .side .rights{
 
 @media (max-width: 369px) {
     .content .guests .items .item {
-        min-height: 320px;
+        min-height: 340px;
         width: 369px;
         align-items: flex-start;
         flex-direction: row;
@@ -2919,8 +2933,18 @@ footer .side .rights{
     }
 }
 
+@media (max-width: 369px) {
+    .content .guests .items .item .fio{
+        min-height: 150px;
+        width: 50%;
+        margin-top: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
 .content .guests .items .item .fio span:nth-child(1){
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
 
     text-align: left;
@@ -2928,17 +2952,17 @@ footer .side .rights{
     color: white;
 
     background-color: #800116;
-    padding: 3px;
+    padding: 5px;
 
     position: relative;
-    right: 15px;
+    right: 10px;
     top: 15px;
 }
 
 @media (max-width: 440px) {
     .content .guests .items .item .fio span:nth-child(1){
         width: 105%;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
     
         text-align: left;
@@ -2956,15 +2980,15 @@ footer .side .rights{
 
 @media (max-width: 369px) {
     .content .guests .items .item .fio span:nth-child(1){
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: 500;
     
         text-align: left;
     
         color: white;
 
         background-color: #800116;
-        padding: 5px;
+        padding: 3px;
 
         position: relative;
         right: 10px;
